@@ -81,7 +81,11 @@ class Root(Manager):
     
         
         
-
+# добавить класс
+class NewRoot:
+    def __init__(self, params):
+        self.params = params
+            
 
 
 
