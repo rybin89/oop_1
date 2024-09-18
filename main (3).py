@@ -85,6 +85,9 @@ class Root(Manager):
 class NewRoot:
     def __init__(self, params):
         self.params = params
+    def name(self):
+        print "Вывод атрибута", self.params
+            
             
 
 
