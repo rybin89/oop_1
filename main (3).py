@@ -61,23 +61,7 @@ print(manager.fullname)
 manager.password = '4321'
 print(manager.password)
 
-# класс предок/родитель ROOT - в линукс системах - это администратор
-class Root(Manager):
-    def __init__(self, fullname, login, password, email, department):
-            super().__init__(fullname, login, password, email, department)
-    # Добавить сеттры
-    @login.setter
-    def login(self,new_login):
-        self._login = new_login
-        return self._login
-    @email.setter
-    def email(self,new_email):
-        self._email = new_email
-        return self._email
-    @department.setter
-    def department(self,new_department):
-        self._department = new_department
-        return self._department
+
     
         
         
